@@ -18,6 +18,7 @@ export default {
       userInfo:{}
     }
   },
+  //TODO 逻辑改变了，采用与AFTER-MARKET一样的token方法
   methods:{
     login(){
       const _this = this;

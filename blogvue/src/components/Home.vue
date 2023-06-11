@@ -81,7 +81,7 @@ export default {
       this.$axios({
         // 默认请求方式为get
         method: 'post',
-        url: 'api/post/article',
+        url: 'api/post/listPost',
         // 传递参数
         data: {
           page: data.page,

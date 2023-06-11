@@ -40,7 +40,7 @@ export default {
       this.$axios({
         // 默认请求方式为get
         method: 'post',
-        url: "/api/post/article/name/"+this.postName,
+        url: "/api/post/"+this.postName,
       }).then(response => {
         // 请求成功
         _this.postInfo = response.data.data

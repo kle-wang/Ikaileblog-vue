@@ -32,7 +32,7 @@
           <div class="footer-main">
             <el-divider></el-divider>
             <div class="footer-copyrights">
-              <span class="footer-span"><el-link>CopyRights By KeyL.Wang 2015-2022 All Rights Reserved.</el-link></span>
+              <span class="footer-span"><el-link>CopyRights By KeyL.Wang 2015-2023 All Rights Reserved.</el-link></span>
             </div>
             <div class="footer-icp">
               <el-link href="https://beian.miit.gov.cn/" target="_blank">晋ICP备20000958号</el-link>

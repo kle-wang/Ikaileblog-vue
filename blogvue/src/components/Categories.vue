@@ -27,7 +27,7 @@ export default {
       this.$axios({
         // 默认请求方式为get
         method: 'get',
-        url: 'api/category',
+        url: 'api/listCategory',
         // 传递参数
         responseType: 'json'
       }).then(response => {
