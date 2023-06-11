@@ -25,18 +25,18 @@
             <el-card class="box-card">
               <div slot="header" class="clearfix">
                 <span>
-                  <el-link :href="'post/'+o.friend_name+'.html'">{{ o.title }}</el-link>
+                  <el-link :href="'post/'+o.friendName+'.html'">{{ o.title }}</el-link>
                 </span>
               </div>
 
               <div class="text item">
-                {{o.summary}}
+                {{o.context}}
               </div>
               <div class="text info">
                 <icon-category-management theme="outline" size="15" fill="#333"/>
-                <el-link :href="'category/'+o.category.id">{{o.category.category_name}}</el-link>
+                <el-link :href="'category/'+o.category.id">{{o.category.categoryName}}</el-link>
                 <icon-schedule theme="outline" size="15" fill="#333"/>
-                {{o.create_data}}
+                {{o.createTime}}
                 <icon-preview-open theme="outline" size="15" fill="#333"/>
                 {{o.view_count}}
               </div>
@@ -81,7 +81,7 @@ export default {
       this.$axios({
         // 默认请求方式为get
         method: 'post',
-        url: 'api/post/listPost',
+        url: 'api/listPost',
         // 传递参数
         data: {
           page: data.page,

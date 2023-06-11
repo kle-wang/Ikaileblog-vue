@@ -7,9 +7,9 @@
       <h1>{{postInfo.title}}</h1>
       </div>
       <icon-category-management theme="outline" size="15" fill="#333"/>
-      <el-link :href="'category/'+postInfo.category.category_name">{{postInfo.category.category_name}}</el-link>
+      <el-link :href="'category/'+postInfo.category.categoryName">{{postInfo.category.categoryName}}</el-link>
       <icon-schedule theme="outline" size="15" fill="#333"/>
-      {{postInfo.create_data}}
+      {{postInfo.createTime}}
       <icon-preview-open theme="outline" size="15" fill="#333"/>
       {{postInfo.view_count}}
     </div>
@@ -40,11 +40,11 @@ export default {
       this.$axios({
         // 默认请求方式为get
         method: 'post',
-        url: "/api/post/"+this.postName,
+        url: "/api/post?friendName="+this.postName,
       }).then(response => {
         // 请求成功
         _this.postInfo = response.data.data
-        _this.postHtml = marked(_this.postInfo.body.context)
+        _this.postHtml = marked(_this.postInfo.context)
       }).catch(error => {
         // 请求失败，
         console.log(error)

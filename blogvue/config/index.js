@@ -33,7 +33,7 @@ module.exports = {
     cssSourceMap: true,
     proxyTable:{
       '/api':{
-        target: 'http://127.0.0.1:8080',
+        target: 'http://118.123.3.101:6868',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/api'

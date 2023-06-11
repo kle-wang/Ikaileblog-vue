@@ -4,7 +4,7 @@
       <h1>Categories</h1>
     </div>
     <div class="category-context">
-      <el-button v-for="(o,index) in categories" :key="index" type="info" round>{{o.category_name}}</el-button>
+      <el-button v-for="(o,index) in categories" :key="index" type="info" round>{{o.categoryName}}</el-button>
 
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
       }).then(response => {
         // 请求成功
         _this.categories = response.data.data
-        console.log(response.data.data);
+        console.log(response.data);
       }).catch(error => {
         // 请求失败，
         console.log(error)
